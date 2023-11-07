@@ -13,9 +13,15 @@ pipeline {
             }
         }
         
-        stage('Publish') {
+        stage('Package') {
             steps {
-                bat 'C:/Users/sqwjng/Desktop/Jenkins/Day2/publish.bat'
+                bat 'C:/Users/sqwjng/Desktop/Jenkins/Day2/package.bat'
+            }
+        }
+
+         stage('Deploy') {
+            steps {
+                bat 'C:/Users/sqwjng/Desktop/Jenkins/Day2/deploy.bat'
             }
         }
         
