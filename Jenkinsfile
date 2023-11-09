@@ -62,7 +62,7 @@ pipeline {
 
         stage('Print') {
           steps {
-            echo 'Deploy 111'
+            echo 'Deploy redo'
           }
         }
 
